@@ -14,7 +14,7 @@
     canvas = document.getElementById('stage');
     ctx = canvas.getContext('2d');
     game = {
-        width: 800,
+        width: 900,
         height: 1000,
         centerX: 400,
         centerY: 500
@@ -29,7 +29,7 @@
             y: game.centerY
         }
     }
-    bullets = []
+    bullets = [];
     enemies = []
 
     drawCircle = (circle) => {
@@ -44,7 +44,7 @@
         x: random(0, game.width),
         y: -10,
         speed: random(1, 5),
-        size: random(20, 50),
+        size: random(10, 30),
         color: 'white'
     }), 1500)
     canvas.onmousemove = event => {
